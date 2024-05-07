@@ -1,0 +1,51 @@
+body{
+    background-image: url('destiny2_art2.jpeg'); 
+ }
+
+ .column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 400px; 
+    background-color: rgb(166, 158, 143);
+    border: 4px solid rgb(13, 13, 21);
+    text-align: center;
+}
+  
+.row:after{
+    display: table;
+}
+
+
+
+.borderforimage{
+    width: 120px;
+    height: auto; 
+    border: double
+}
+
+table, th{
+    border: 5px solid black;
+    width: 50%;
+
+}
+
+td{
+    border: 2 px double rgb(244, 15, 15);
+}
+
+ul{
+    text-align: left;
+    color:rgba(156, 53, 53, 0.99);
+    
+}
+
+#p{
+    color: blue;
+}
+
+#red{
+    color: darkred;
+}
+
+

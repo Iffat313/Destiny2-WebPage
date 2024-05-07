@@ -1,0 +1,176 @@
+body{
+    background-image: url('destiny2_art2.jpeg'); 
+ }
+
+ li{
+    color: rgb(8, 147, 162);
+    font: 90px;
+ }
+
+ .column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 400px; 
+    background-color: rgb(202, 226, 226);
+    border: 4px solid rgb(13, 13, 21);
+    text-align: center;
+}
+  
+.row:after{
+    display: table;
+}
+
+
+
+.borderforimage{
+    width: 120px;
+    height: auto; 
+    border: double
+}
+
+table, th{
+    border: 5px solid black;
+    width: 50%;
+
+}
+
+td{
+    border: 2 px double rgb(244, 15, 15);
+}
+
+ul{
+    text-align: left;
+    color:rgb(156, 53, 53);
+    
+}
+
+#p{
+    color: blue;
+}
+
+#red{
+    color: darkred;
+}
+
+#GIF_left{  
+    display: block;
+    width: 100px;
+    height:100px;
+    object-position: left;
+    object-fit: contain;
+    border-radius: 50%;
+    position:relative;
+    left:10px;
+    bottom: 15px;
+}
+
+#GIF_left2{ /*done*/
+    display: block;
+    width: 100px;
+    height:65px;
+    object-position: right;
+    border-radius: 50%;
+    position:relative;
+    left: 50px;
+    bottom: 2910px;
+}
+
+#BYL{
+
+    padding: 30px;
+    border: 3px solid black;
+    background-image: url("star-light.gif");
+    display: block;
+    width: 200px;
+    height:150px;
+    object-position: left;
+    object-fit: contain;
+    border-radius: 50px;
+    border: 5px solid black;
+    position:relative;
+    left:10px;
+    bottom: 2485px;
+}
+
+#BYL2{ /*done*/
+
+    padding: 30px;
+    border: 3px solid black;
+    background-color: lightblue;
+    display: block;
+    width: 200px;
+    height:150px;
+    object-position: left;
+    object-fit: contain;
+    border-radius: 50px;
+    border: 5px solid black;
+    position:relative;
+    left:10px;
+    bottom: 2818px;
+    text-align: left;
+    color: rgb(91, 5, 105);
+    font: 15px Arial;
+
+
+}
+
+#right_padding_2{ /*done*/
+
+    padding: 20px;
+    border: 3px solid black;
+    background-color: rgb(202, 149, 215);
+    display: block;
+    width: 200px;
+    height:150px;
+    object-position: left;
+    object-fit: contain;
+    border-radius: 50px;
+    border: 5px solid black;
+    position:relative;
+    left:1000px;
+    bottom: 3050px;
+    text-align: left;
+    color: rgb(91, 5, 105);
+    font: 15px Arial;
+
+
+}
+
+#right_padding_3{  /*done*/
+
+    padding: 20px;
+    border: 3px solid black;
+    background-color: rgb(202, 149, 215);
+    display: block;
+    width: 200px;
+    height:150px;
+    object-position: left;
+    object-fit: contain;
+    border-radius: 50px;
+    border: 5px solid black;
+    position:relative;
+    left:1000px;
+    bottom: 3050px;
+    text-align: left;
+    color: rgb(91, 5, 105);
+    font: 15px Arial;
+    background-image: url("star-light.gif"); /*only works with gifs*/
+
+
+
+}
+
+#img_right{
+
+    display: block;
+    width: 100px;
+    height:100px;
+    object-position: left;
+    object-fit: contain;
+    border-radius: 50%;
+    position:relative;
+    left:20px;
+    bottom: 1px;
+
+}

@@ -1,0 +1,22 @@
+#img{
+    display: block;
+    width: 50x;
+    height:50px;
+    object-position: left;
+    object-fit: contain;
+    border-radius: 50%;
+    border: 5px solid black;
+    position:relative; 
+    left:150px;
+    bottom: 30px
+    
+}
+
+footer{
+ color: rgb(139, 25, 138);  
+}
+
+#TEXT{
+
+    color: darkorchid;
+}

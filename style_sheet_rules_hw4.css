@@ -1,0 +1,166 @@
+td, th { border: 1px solid #CCC; }
+table { border: 1px solid black; }
+body {
+background-color: #168e99;
+margin: 0 10%;
+font-family: 'Times New Roman', Times, serif;
+font-size: 100%; /*NEW font size for body from hw#4 */
+
+} 
+h1 { 
+text-align: center;
+font-family: serif;
+font-weight: normal;
+text-transform: uppercase;
+border-bottom: 1px solid #57b1dc;
+margin-top: 30px;
+border-bottom: 1px solid orange;
+font-size: 160%; /*NEW font size for h1 from hw#4 but we'll go a bit higher for h1*/
+}
+h2 {
+color: #d1633c;
+font-size: 1em; /*h2 as the same size as body text like hw4 requested!*/
+}
+
+h5 {font-family: "Marko One", Georgia, serif;}
+dt strong {font-weight:bold; color:red} 
+h5 em {font-size:small; font-family: "Marko One", Georgia, serif; color:rgb(217, 171, 32); border-top: 3px solid;border-left: 3px solid;padding-left: 1em }
+dt em{font-family: "cursive"; font-size:large} 
+#phrase {text-align:center; color:green} /*A use of #selector for style sheet rule*/
+h6.reminder{font-family:"Lucida Console";color:red;text-align:center} /*A use of class selector style sheet rule*/
+mark q{color: #993399}
+#qnumber2{color:rgb(242, 242, 242); outline-color: #168e99;}
+.header{color:rgb(188, 10, 10); text-align: center; padding:60px; background:#57b1dc}
+/*make the link have custom underline from what we learned in chapter 14*/
+a:link {text-decoration: none; color:blue; border-bottom: 3px; border-bottom-style: solid; padding-bottom: .10em; }
+a:visited{color:purple}
+a:hover{color:rgb(222, 70, 222); background-color:#fff ; } /*style sheet for links*/
+#series{background-image: url('circles.webp'); background-position:center top; background-size: cover;  } /*embeded style sheet of adding background image*/
+.header2{
+    padding: 60px;
+    text-align: center;
+    background:lightblue;
+    font-size:30px;
+    background-image: url('LOGO.webp'); background-size: 10%; background-position: 90% bottom; background-repeat: no-repeat;
+    /*background-image: url('cayde_s.jpg');  background-size: 10%; background-position: top left; background-repeat: no-repeat;*/
+    
+}
+
+/*Below are just some simple padding elements to a border box*/
+html {
+    box-sizing: border-box;
+   }
+   * {
+    box-sizing: inherit;
+   }
+
+
+header {height: 1em} 
+
+article {padding: 1em; 
+        border: double 4px #172453;
+        border-top-left-radius: 1em;
+        border-top-right-radius: 2em;
+        border-bottom-right-radius: 1em;
+        border-bottom-left-radius: 2em;
+        margin-top: 3.5em
+    } /* this is the border radius property, it adds some style to the corners of our border that we created*/
+
+aside {padding: 1em; padding-left: 45px} 
+
+h3{
+    font-size:small; 
+    font-family: "Marko One", Georgia, serif; 
+    color:rgb(0, 0, 0); 
+    border-top: 3px solid;
+    border-left: 3px solid;
+    padding-left: 1em;
+    margin-top: 3em;
+
+}
+
+
+h4{
+    font-size:small; 
+    font-family: "Marko One", Georgia, serif; 
+    color:rgb(0, 0, 0); 
+    border-top: 3px solid;
+    border-left: 3px solid;
+    padding-left: 1em;
+    margin-top: 3em;
+
+}
+
+.borderr{
+        border-style:solid;
+        padding-left: 1em
+
+}
+
+/*recall some definitions:
+
+1) The padding property allows you to add space between 
+the element and the border surrouding that property. The
+padding property should be applied where the border property is being used
+The same goes for the margin property.
+
+2) The margin property inserts space around the border 
+
+3) Yes this is a external style sheet, but we can implement
+the style sheet in multiple ways. It can choose the element with that
+ID or class
+
+*/
+
+/*New content for assignment 5*/
+nav ul{  /*centers the links or puts them into a flexbox */
+
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display:flex;  
+    justify-content: center;
+}
+
+nav ul li a {  /*applies this style sheet rule to each <a>*/
+    display: block;
+    border: 1px solid;
+    border-radius: .5em;
+    padding: .5em 1em;
+    margin: .5em;
+   } 
+
+#menu{
+    border: 3px double #abe81d;
+    display: flex; /*creates a flex container */
+    align-items: flex-start; /*changes the alignment of an item in a flex box*/
+    /*flex-wrap: wrap;*/
+    flex-direction: reverse;
+    
+
+}
+
+#input{
+
+    display: flex;
+    flex-direction: column;
+    color: rgb(105, 35, 35);
+    background-color: gold;
+    font: italic small-caps bold 12px/30px Georgia, serif;
+
+
+}
+
+
+/*this is our first media query
+In fact, the rest of the synatx will feature the remaining queries, where we will decide at what pixel within the viewport
+the item should stay still at.*/
+
+@media screen and (min-width: 100px) {
+   article nav ul  {
+    flex: none;
+    }
+    nav ul {
+    justify-content: center;
+    }
+   }
